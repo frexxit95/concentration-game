@@ -1,0 +1,324 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; 
+    background-color: #f3ebe1; 
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #0047AB; 
+    padding: 1em;
+    text-align: center;
+    
+}
+
+.logo-header{
+    display: flex;
+    margin-top: 2%;
+    justify-content: center; 
+    align-items: center;
+    height: 3vh;
+    flex-shrink: 0;
+    background: #001D3D;
+
+}
+
+.logo {
+    color: #FFC300;
+    -webkit-text-stroke: 9px #001D3D;; 
+    font-family: Cherry Bomb;
+    letter-spacing: -3px;
+    font-size: 98.524px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.navbar {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.navbar a {
+    color: #D6CCC2;
+    font-family: 'Cherry Bomb', cursive;
+    font-size: 24px; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 0 25px; 
+    text-decoration: none;
+}
+
+.navbar a.active {
+    color: #001D3D; /* Set the highlight color for the active link */
+}
+
+/* Add this CSS for the active link indicator */
+.navbar a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px; /* Adjust the height of the indicator line */
+    background-color: #001D3D; /* Set the highlight color for the indicator */
+    margin-top: 3px; /* Adjust the margin as needed */
+}
+
+
+.main {
+    padding: 1em;
+}
+
+.main-concentration {
+    background-color: #D6CCC2;
+    padding: 1em;
+    width: 100%; 
+    max-width: 800px; 
+    margin: 1em auto; 
+    margin-bottom: 4%;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-concentration h1 {
+    color: #001D3D;
+    font-family: Cherry Bomb;
+}
+
+.main-concentration p {
+    color: #333;
+    font-family: Chau Philomene One;
+    font-size: 18px; 
+    align-items: flex-start; 
+}
+
+.main-concentration button {
+    background-color: #001D3D;
+    color: #FFC300;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Cherry Bomb;
+    margin-top: 10px;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+}
+
+
+.thinking-man-image {
+    margin-top: 15%;
+    width: 270px;
+}
+
+.instructions-container {
+    background-color: #D6CCC2;
+    padding: 1em;
+    width: 100%;
+    max-width: 800px; 
+    margin: 1em auto;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instructions-container h1 {
+    color: #001D3D;
+    font-family: Cherry Bomb;
+}
+
+.instructions-container p{
+    color: #333;
+    font-family: Chau Philomene One;
+    font-size: 18px; 
+    align-items: flex-start; 
+}
+
+.instructions-container li {
+    font-family: Chau Philomene One;
+    color: #333;
+}
+
+.about-container {
+    background-color: #D6CCC2;
+    padding: 1em;
+    width: 100%; 
+    max-width: 800px; 
+    margin: 1em auto; 
+    margin-bottom: 4%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+    color: #001D3D;
+    font-family: Cherry Bomb;
+}
+
+.about-container p{
+    color: #333;
+    font-family: Chau Philomene One;
+    font-size: 18px; 
+    align-items: flex-start; 
+}
+
+.main-concentration button {
+    background-color: #001D3D;
+    color: #FFC300;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Cherry Bomb;
+    margin-top: 10px;
+}
+
+
+.game-container {
+    top: 200px;
+}
+
+.card {
+    width: 100%;
+    height: 100px; 
+    background-color: #D6CCC2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: Chau Philomene One;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #001D3D;
+    color: #FFC300;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Cherry Bomb;
+    margin-top: 10px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 400px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 9%;
+}
+
+.card {
+    width: 90px;
+    height: 90px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 90px;
+    cursor: pointer;
+}
+
+.score-counter{
+    display: flex;
+    align-items: center;
+    margin-left: 38%;
+    font-family: Chau Philomene One;
+}
+
+.score {
+    background-color: #FFC300;
+    border-radius: 10px;
+    padding: 7px 50px;
+    font-size: 16px;
+    display: flex;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.game-start {
+    display: flex;
+    align-items: center;
+    margin-top: 49%;
+}
+
+.game-footer {
+    background-color: #001D3D;
+    color: #FFC300;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-photo{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-left: 60%;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 8vw; 
+        -webkit-text-stroke: 0.4vw #001D3D;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo-header {
+        margin-top: 2%; 
+        height: 6vh; 
+    }
+
+    .logo {
+        font-size: 10vw; 
+        -webkit-text-stroke: 0.3vw #001D3D;
+        letter-spacing: -1px; 
+    }
+
+    
+}
+
+@keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+.flip-animation {
+    animation: flip 0.6s ease-in-out;
+}

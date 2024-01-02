@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concentration Game - Play</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cherry Bomb' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/chau-philomene-one" rel="stylesheet">
+</head>
+
+<body>
+    <header class="logo-header">
+        <div class="logo">CONCENTRATION GAME</div>
+    </header>
+    <div>
+        <nav class="navbar">
+            <a href="index.html" id="home-link">Home</a>
+            <a href="game.html" id="game-link" class="active">The Game</a>
+            <a href="instructions.html" id="instructions-link">Instructions</a>
+            <a href="about.html" id="about-link">About Us</a>
+        </nav>
+    </div>
+    <main>
+        <div class="score-counter">
+            <button onclick="startGame()">Start New Game</button>
+            <span class="score" id="score">Moves: 0</span>
+        </div>
+        <div id="game-board" class="game-board"></div>
+    </main>
+    <footer class="game-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Concentration Game. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concentration Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cherry Bomb' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/chau-philomene-one" rel="stylesheet">
+    <script>
+        // Your script to highlight the current page goes here
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the current section ID (you need to adapt this based on your logic)
+            const currentSectionId = 'home'; // Replace with the actual ID of the current section
+
+            // Remove 'active' class from all links
+            document.querySelectorAll('.navbar a').forEach(link => link.classList.remove('active'));
+
+            // Add 'active' class to the current link
+            document.getElementById(`${currentSectionId}-link`).classList.add('active');
+        });
+    </script>
+</head>
+
+<body>
+    <header class="logo-header">
+        <div class="logo">CONCENTRATION GAME</div>
+    </header>
+    <div>
+        <nav class="navbar">
+            <a href="index.html" id="home-link">Home</a>
+            <a href="game.html" id="game-link">The Game</a>
+            <a href="instructions.html" id="instructions-link">Instructions</a>
+            <a href="about.html" id="about-link">About Us</a>
+        </nav>
+
+    </div>
+    <main>
+        <div class="main-concentration">
+            <div class="row">
+                <div class="column">
+                    <h1>Why Concentration Is Important?</h1>
+                    <p>Concentration allows you to better use your resources and approach problems more efficiently.
+                        When
+                        you are concentrating it is less likely that you will miss important information. Staying
+                        focused
+                        helps you memorise things more easily.
+                    </p>
+                    <button>Try It!</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="thinking-man-container">
+                    <img src="src/asking.png" alt="Thinking Man Image" class="thinking-man-image">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="game-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Concentration Game. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
