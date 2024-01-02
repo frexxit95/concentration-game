@@ -20,7 +20,7 @@ function startGame() {
 }
 
 function initializeCards() {
-    cards = cardValues.concat(cardValues); // Duplicate the array
+    cards = cardValues.concat(cardValues); 
 }
 
 function shuffleCards() {
@@ -46,17 +46,17 @@ function onCardClicked(cardElement) {
     if (lockBoard) return;
     if (cardElement === firstCard) return;
 
-    cardElement.classList.remove('flip'); // Remove flip class to reset the rotation
+    cardElement.classList.remove('flip'); 
     cardElement.classList.remove('flip-animation');
 
-    // Trigger reflow to restart the animation
+   
     void cardElement.offsetWidth;
 
     cardElement.classList.add('flip-animation');
     setTimeout(() => {
         cardElement.classList.add('flip');
         cardElement.innerHTML = cardElement.getAttribute('data-card-value');
-    }, 300); // Adjust the timeout value as needed
+    }, 300); 
 
     if (!cardFlipped) {
         cardFlipped = true;

@@ -8,19 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Cherry Bomb' rel='stylesheet'>
     <link href="https://fonts.cdnfonts.com/css/chau-philomene-one" rel="stylesheet">
-    <script>
-        // Your script to highlight the current page goes here
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get the current section ID (you need to adapt this based on your logic)
-            const currentSectionId = 'home'; // Replace with the actual ID of the current section
-
-            // Remove 'active' class from all links
-            document.querySelectorAll('.navbar a').forEach(link => link.classList.remove('active'));
-
-            // Add 'active' class to the current link
-            document.getElementById(`${currentSectionId}-link`).classList.add('active');
-        });
-    </script>
 </head>
 
 <body>
@@ -29,7 +16,7 @@
     </header>
     <div>
         <nav class="navbar">
-            <a href="index.html" id="home-link">Home</a>
+            <a href="index.html" id="home-link" class="active">Home</a>
             <a href="game.html" id="game-link">The Game</a>
             <a href="instructions.html" id="instructions-link">Instructions</a>
             <a href="about.html" id="about-link">About Us</a>
@@ -47,7 +34,9 @@
                         focused
                         helps you memorise things more easily.
                     </p>
-                    <button>Try It!</button>
+                    <a href="game.html">
+                        <button>Try It!</button>
+                    </a>
                 </div>
             </div>
             <div class="column">
